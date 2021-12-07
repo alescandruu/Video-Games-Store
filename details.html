@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="header">
+        <img src="images/logo4.png" id="logoImage">
+        <div>
+            <input>
+            <button class="buttons"><i class='fa fa-search'></i></button>
+        </div>
+        <div id="cart">
+            <p>My Cart <i class="fa fa-shopping-cart"></i></p>
+            <p id="homeButton">Home <i class="fa fa-home"></i></p>
+        </div>
+    </div>
+    <div id="gameDetails">
+        <img id="gameDetailsImage">
+        <div id="textInfos">
+        <h2 id="gameDetailsTitle"></h2>
+        <p id="gameDetailsType"></p>
+        <p id="gameDetailsPublisher"></p>
+        <p id="gameDetailsRelease"></p>
+        </div>
+    </div>
+    <div id="editGame">
+    <button class="buttons" id="editGameButton">Edit Game</button>
+    </div>
+    <div id="modifyGame">
+        <label>Game title: </label>
+        <input id="titleInput">
+        <label>Game type: </label>
+        <input id="typeInput">
+        <label>Game publisher: </label>
+        <input id="publisherInput">
+        <label>Release date:</label>
+        <input id="releaseInput">
+        <label>Image Url:</label>
+        <input id="urlInput">
+        <button class="buttons" style="font-size: 80%;" id="okButton">OK</button>
+        <span id="approved"><i class="fa fa-check-circle" style="font-size:48px;color:green"></i></span>
+    </div>
+    
+    <script src="classes.js"></script>
+    <script src="requests.js"></script>
+    <script src="details.view.js"></script>
+</body>
+</html>

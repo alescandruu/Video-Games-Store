@@ -1,0 +1,112 @@
+html {
+    height: 100%;
+}
+body {
+    margin:0;
+    background-image: url(images/bck1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    color: white;
+}
+#logoImage {
+    width: 5%;
+    padding-left: 3%;
+    
+}
+#header {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.685);
+    justify-content: space-between;
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#header button {
+    margin-bottom: 4%;
+}
+.buttons {
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    font-size: 97%;
+    border: 2px solid;
+    color: white;
+}
+.buttons:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+input {
+    border: 2px solid white;
+    border-radius: 5px;
+}
+#cart {
+    display: flex;
+    justify-content: space-between;
+    width: 12%;
+    padding-right: 2%;
+    font-size: 110%;
+}
+#cart p {
+    padding: 0% 2%;
+    border-radius: 5px;
+}
+#cart p:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+} 
+#gameDetails {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    font-family:'Courier New', Courier, monospace;
+    text-shadow: 3px 3px 2px black;
+}
+#gameDetails img {
+    width: 25%;
+    border-radius: 25px;
+    border: 2px solid white;
+    box-shadow: 3px 2px 10px white;
+}
+#textInfos {
+    font-size: 130%;
+}
+#editGame {
+    display: flex;
+    justify-content: center;
+    padding-top: 4%;
+    padding-bottom: 0%;
+    margin-bottom: 2%;
+}
+#modifyGame {
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+    font-size: 120%;
+    text-shadow: 3px 3px 2px black;
+}
+#modifyGame input {
+    width: 80%;
+    margin: 0 auto;
+}
+#modifyGame label {
+    margin: 1% 0%;
+}
+#modifyGame button {
+    width:fit-content;
+    margin: 0 auto;
+    margin-top: 4%;
+}
+#approved {
+    display: none;
+}

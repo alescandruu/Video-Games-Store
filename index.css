@@ -1,0 +1,138 @@
+html {
+    height: 100%;
+}
+body {
+    margin:0;
+    background-image: url(images/bck1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+#logoImage {
+    width: 5%;
+    padding-left: 3%;
+    
+}
+#header {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.685);
+    justify-content: space-between;
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#header button {
+    margin-bottom: 4%;
+}
+#gameList {
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 40%, rgba(255,251,251,0) 100%);
+    width: 100%;
+    height: 49%;
+    display: flex;
+    overflow-x: auto;
+}
+#gameList div {
+    min-width: 230px;
+    height: 300px;
+    background-size: cover;
+    margin:0 3%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+}
+#gameList div button {
+    margin: 0 auto;
+    margin-bottom: 4%;
+    border: 2px solid;
+}
+#gameList::-webkit-scrollbar {
+    display: none;
+}
+#ownGameDiv {
+    background-image: url(images/game1.jpg);
+    display: flex;
+    flex-direction: column;
+    transition: padding-top 0.5s, padding-left 0.5s, padding-right 0.5s;
+}
+.gameDiv {
+    border: 1px solid white;
+}
+.gameDiv:hover {
+    border: 3px solid;
+    box-shadow: 2px 2px 2px white;
+    animation: bigger 0.5s forwards;
+    animation-direction: alternate;
+}
+#actualGameInfos {
+    height: 51%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+#actualGame {
+    color: white;
+    padding-left: 7%;
+    text-shadow: 3px 3px 2px black;
+    align-items: center;
+    justify-content: center;
+}
+#actualGame p {
+    font-size: 130%;
+}
+#gameDescription {
+    display: flex;
+    justify-content: center;
+}
+@keyframes bigger {
+    to {
+        padding-top: 48px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+#cart {
+    display: flex;
+    justify-content: space-between;
+    width: 12%;
+    padding-right: 2%;
+    font-size: 110%;
+}
+#cart p {
+    padding: 0% 2%;
+    border-radius: 5px;
+}
+#cart p:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+} 
+.buttons {
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    font-size: 97%;
+    border: 2px solid;
+    color: white;
+}
+.buttons:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+input {
+    border: 2px solid white;
+    border-radius: 5px;
+}
+h2 {
+    font-size: 280%;
+    margin: 0;
+}
+#gameDescription {
+    text-align: justify;
+    width: 55%;
+    text-shadow: 2px 2px 2px black;
+}
